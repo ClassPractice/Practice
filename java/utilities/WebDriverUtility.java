@@ -178,4 +178,68 @@ public class WebDriverUtility extends Base {
 
 	}
 
+	
+	
+	
+	
+	
+	
+	public class TestNGDemo {
+		  @BeforeSuite
+		  public void greeting() {
+		      System.out.println("hello there");    
+		  }
+		  @AfterSuite
+		  public void Closing() {
+		      System.out.println("End the demo");   
+		  }
+		  @BeforeClass
+		  public void b4Class() {
+		      System.out.println("program starts");     
+		  }
+		  @AfterClass
+		  public void afterClass() {
+		      System.out.println("program ends");   
+		  }
+		  @BeforeMethod
+		  public void message() {
+		      System.out.println("lets do some math");      
+		  }
+		  
+		  @AfterMethod
+		  public void goodbye() {
+		      System.out.println("until next time");
+		  } 
+		  
+		  @Test
+		  public void add() {
+		        System.out.println("fist test");
+		  }
+		  
+		  @Test
+		  public void minus() {
+		        System.out.println("second test");
+		  }
+
+		  
+		  // Junit also use anotation with junit we can create just method like once we can call the mekthod and to give anotation to it the system start run it. 
+		  // how the system knows what line to run first it's all by help of junit to use anotaiton. in ruuner whenever we mintion the tags it will run them. Junit has come before TestNG .
+		  // testNG offer mulitifunctions, 
+		  // parallel testing 
+		  // 
+		  // @runWith acts like similar to main method to kick of exectuion of the test. 
+		  // @ test is only an anotation and place on top of the Scenario. 
+		  // @ beforeClass  they both offer 
+		  // @ afterClass only will be treigered all the test within same class .
+		  // @beforemethod testNG this will be  invoked whenever there is test about to be triggered. @ before Junit 4 will run before test annotation of it's turn
+		  
+		  //@ 
+		  // 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
 }
